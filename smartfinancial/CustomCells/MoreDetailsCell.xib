@@ -1,21 +1,146 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Archivo-Regular.ttf">
+            <string>Archivo-Regular</string>
+        </array>
+        <array key="Archivo-SemiBold.ttf">
+            <string>Archivo-SemiBold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MoreDetailsCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoreDetailsCell" rowHeight="128" id="KGk-i7-Jjw" customClass="MoreDetailsCell" customModule="smartfinancial" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="121"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="343" height="121"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WrY-P8-5lU" userLabel="containerView">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="121"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKb-p0-Qno" userLabel="statusView">
+                                <rect key="frame" x="0.0" y="0.0" width="343" height="12"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.1176470588" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="Eyf-29-3z2"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOME DO NAVIO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkf-Km-8MT">
+                                <rect key="frame" x="16" y="20" width="162" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="OKA-Lt-xgg"/>
+                                    <constraint firstAttribute="width" constant="162" id="re0-BH-BL0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOME DO PRATICO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfE-iK-HjR">
+                                <rect key="frame" x="16" y="40" width="200" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="dty-7H-Xh8"/>
+                                    <constraint firstAttribute="height" constant="16" id="fhK-P0-iIB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="14"/>
+                                <color key="textColor" red="0.44313725490196076" green="0.45490196078431372" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14/05/2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC7-DH-G6b">
+                                <rect key="frame" x="16" y="89" width="75" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Kn3-DH-jun"/>
+                                    <constraint firstAttribute="width" constant="75" id="P4d-5O-rIh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="14"/>
+                                <color key="textColor" red="0.4431372549" green="0.4549019608" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 999.999,99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTs-i7-xPz">
+                                <rect key="frame" x="165" y="83" width="162" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="Rcp-uD-Yfu"/>
+                                    <constraint firstAttribute="height" constant="26" id="bTH-gY-GQR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Archivo-SemiBold" family="Archivo" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLIENTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbh-R1-fML">
+                                <rect key="frame" x="16" y="60" width="180" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="011-ih-jAg"/>
+                                    <constraint firstAttribute="width" constant="180" id="A5E-SS-zKB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="14"/>
+                                <color key="textColor" red="0.4431372549" green="0.4549019608" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTRATO" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGo-Ph-gxQ">
+                                <rect key="frame" x="165" y="20" width="162" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="arE-GL-lfs"/>
+                                    <constraint firstAttribute="height" constant="16" id="w4O-TP-paU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="14"/>
+                                <color key="textColor" red="0.4431372549" green="0.4549019608" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dGo-Ph-gxQ" firstAttribute="top" secondItem="hKb-p0-Qno" secondAttribute="bottom" constant="8" id="1D6-lO-LwA"/>
+                            <constraint firstItem="mC7-DH-G6b" firstAttribute="leading" secondItem="WrY-P8-5lU" secondAttribute="leading" constant="16" id="1W1-wb-2Dk"/>
+                            <constraint firstItem="hKb-p0-Qno" firstAttribute="leading" secondItem="WrY-P8-5lU" secondAttribute="leading" id="ATQ-IZ-aGM"/>
+                            <constraint firstItem="nfE-iK-HjR" firstAttribute="top" secondItem="dkf-Km-8MT" secondAttribute="bottom" constant="4" id="ATj-yU-Ag5"/>
+                            <constraint firstItem="hKb-p0-Qno" firstAttribute="top" secondItem="WrY-P8-5lU" secondAttribute="top" id="IFt-lG-3ss"/>
+                            <constraint firstAttribute="bottom" secondItem="mTs-i7-xPz" secondAttribute="bottom" constant="12" id="Iox-rE-nqs"/>
+                            <constraint firstAttribute="trailing" secondItem="mTs-i7-xPz" secondAttribute="trailing" constant="16" id="RoB-vD-7M9"/>
+                            <constraint firstItem="nfE-iK-HjR" firstAttribute="leading" secondItem="WrY-P8-5lU" secondAttribute="leading" constant="16" id="SN9-Tg-vxI"/>
+                            <constraint firstItem="vbh-R1-fML" firstAttribute="leading" secondItem="WrY-P8-5lU" secondAttribute="leading" constant="16" id="Xwr-ks-eDT"/>
+                            <constraint firstItem="dkf-Km-8MT" firstAttribute="leading" secondItem="WrY-P8-5lU" secondAttribute="leading" constant="16" id="go2-Dh-0Cs"/>
+                            <constraint firstAttribute="trailing" secondItem="hKb-p0-Qno" secondAttribute="trailing" id="i5R-pL-btY"/>
+                            <constraint firstAttribute="trailing" secondItem="dGo-Ph-gxQ" secondAttribute="trailing" constant="16" id="iqD-qK-RZb"/>
+                            <constraint firstItem="dkf-Km-8MT" firstAttribute="top" secondItem="hKb-p0-Qno" secondAttribute="bottom" constant="8" id="lbu-N5-Rwy"/>
+                            <constraint firstItem="vbh-R1-fML" firstAttribute="top" secondItem="nfE-iK-HjR" secondAttribute="bottom" constant="4" id="niV-iD-fjf"/>
+                            <constraint firstAttribute="bottom" secondItem="mC7-DH-G6b" secondAttribute="bottom" constant="16" id="vPm-QV-a9D"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="WrY-P8-5lU" secondAttribute="trailing" id="Adq-hd-J1Z"/>
+                    <constraint firstItem="WrY-P8-5lU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GxD-S7-Zwv"/>
+                    <constraint firstAttribute="bottom" secondItem="WrY-P8-5lU" secondAttribute="bottom" id="WS2-2G-fsB"/>
+                    <constraint firstItem="WrY-P8-5lU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="c0Z-TH-zNX"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="clienteLabel" destination="vbh-R1-fML" id="FWZ-dR-8sv"/>
+                <outlet property="containerView" destination="WrY-P8-5lU" id="yAx-jh-KZY"/>
+                <outlet property="contratoLabel" destination="dGo-Ph-gxQ" id="YpG-pJ-DoH"/>
+                <outlet property="dataLabel" destination="mC7-DH-G6b" id="0xR-rC-HrY"/>
+                <outlet property="navioLabel" destination="dkf-Km-8MT" id="Kgd-wl-Iqb"/>
+                <outlet property="praticoLabel" destination="nfE-iK-HjR" id="A22-7d-Bbz"/>
+                <outlet property="statusView" destination="hKb-p0-Qno" id="Y6E-Fl-w7d"/>
+                <outlet property="valorLabel" destination="mTs-i7-xPz" id="znc-7N-a2k"/>
+            </connections>
+            <point key="canvasLocation" x="165.94202898550725" y="89.397321428571431"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

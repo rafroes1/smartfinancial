@@ -2,8 +2,15 @@
 //  File.swift
 //  smartfinancial
 //
-//  Created by Rafael Fróes Monteiro Carvalho on 26/08/20.
-//  Copyright © 2020 rafafroes. All rights reserved.
+//  Created by Rafael Fróes Monteiro Carvalho
+//  Copyright © rafafroes. All rights reserved.
 //
 
 import Foundation
+
+struct Ciclo{
+    var numero: Int?
+    var dataInicio: String?
+    var dataFim: String?
+    var manobras: [Manobra]?
+}

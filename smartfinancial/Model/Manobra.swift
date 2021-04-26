@@ -2,8 +2,21 @@
 //  Manobra.swift
 //  smartfinancial
 //
-//  Created by Rafael Fróes Monteiro Carvalho on 26/08/20.
-//  Copyright © 2020 rafafroes. All rights reserved.
+//  Created by Rafael Fróes Monteiro Carvalho
+//  Copyright © rafafroes. All rights reserved.
 //
 
 import Foundation
+
+struct Manobra{
+    var ciclo: Int?
+    var boleto: String?
+    var cliente: String?
+    var contratro: String?
+    var dataManobra: String?
+    var navio: String?
+    var realizadoPor: String?
+    var statusBoleto: String?
+    var valor: Double?
+    var vencimentoBoleto: String?
+}
